@@ -23,7 +23,7 @@ class UsuarioValidacionTest {
       String nombreValido="Melissa Mantilla"; //preparando
 
       //ejecutar la validacion.
-        Assertions.assertDoesNotThrow(()->usuarioValidacion.validarNombre(nombreValido));
+        Assertions.assertDoesNotThrow(()->this.usuarioValidacion.validarNombre(nombreValido));
     }
 
 
@@ -32,7 +32,7 @@ class UsuarioValidacionTest {
     {
         String nombreInvalido="35446759895 Mantilla "; //preparando
         //ejecuto y verifico con la ASSERTIONS.
-        Exception exception=Assertions.assertThrows(Exception.class,()->usuarioValidacion.validarNombre(nombreInvalido));
+        Exception exception=Assertions.assertThrows(Exception.class,()->this.usuarioValidacion.validarNombre(nombreInvalido));
         Assertions.assertEquals(Mensajes.NOMBRE_SOLO_LETRAS.getMensajes(),exception.getMessage());
 
 

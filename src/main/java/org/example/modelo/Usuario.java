@@ -2,13 +2,14 @@ package org.example.modelo;
 
 import org.example.validaciones.UsuarioValidacion;
 
-public class Usuario
+public abstract  class Usuario
 {
    private Integer id;
     private String documento;
     private  String nombres;
     private String correo;
     private  Integer ubicacion;
+    private final Integer costoAnual=2000000;
 
     private UsuarioValidacion validacion=new UsuarioValidacion();
 
@@ -21,6 +22,10 @@ public class Usuario
         this.nombres = nombres;
         this.correo = correo;
         this.ubicacion = ubicacion;
+    }
+
+    public Integer getCostoAnual() {
+        return costoAnual;
     }
 
     public Integer getId() {
@@ -92,4 +97,7 @@ public class Usuario
                 ", validacion=" + validacion +
                 '}';
     }
+    // METODOS ORDINARIOS
+
+    public  abstract Double calcularAnualidades();
 }

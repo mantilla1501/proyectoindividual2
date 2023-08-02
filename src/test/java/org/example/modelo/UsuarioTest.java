@@ -19,7 +19,7 @@ class UsuarioTest
    @Test
     public  void setUsuarioCorrectoNombres()
    {
-     String nombreValido="pepita ruiz ";
+     String nombreValido="pepita ruiz "; //preparer
      this.usuario.setNombres(nombreValido); // ejecutar
        Assertions.assertEquals(nombreValido,usuario.getNombres());
    }
