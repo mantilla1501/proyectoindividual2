@@ -1,5 +1,6 @@
 package org.example.validaciones;
 
+import org.example.utilidades.Mensajes;
 import org.example.utilidades.Util;
 
 public class LocalValidacion
@@ -16,7 +17,7 @@ public class LocalValidacion
       if (nombres.length()>30)
 
       {
-         throw new Exception("El nombre excede el numero de caracteres : ");
+         throw new Exception(Mensajes.LA_LONGITUD_.getMensajes());
       }
 
        else

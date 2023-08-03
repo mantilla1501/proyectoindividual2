@@ -51,6 +51,7 @@ public abstract  class Usuario
     public void setNombres(String nombres) {
         try{
             this.validacion.validarNombre(nombres);
+            this.nombres=nombres;
         }catch (Exception error){
             System.out.println(error.getMessage());
         }

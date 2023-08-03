@@ -45,6 +45,7 @@ public class Oferta
         try
         {
         this.validar.validarTitulo(titulo);
+        this.titulo=titulo;
         }
         catch (Exception error)
         {
@@ -109,6 +110,7 @@ public class Oferta
         try
         {
             this.validar.validarcostoPersona( costoPersonal );
+            this.costoPersonal=costoPersonal;
         }
         catch (Exception error)
         {

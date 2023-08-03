@@ -40,6 +40,7 @@ private LocalValidacion validacion=new LocalValidacion();
         try
         {
           this.validacion.validarNit(nit);
+          this.nit=nit;
         }
         catch (Exception error)
         {
@@ -56,6 +57,7 @@ private LocalValidacion validacion=new LocalValidacion();
         try
         {
            this.validacion.validarNombres(nombre);
+           this.nombre=nombre;
         }
         catch (Exception error)
         {

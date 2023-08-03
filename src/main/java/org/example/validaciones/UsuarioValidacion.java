@@ -1,5 +1,6 @@
 package org.example.validaciones;
 
+import org.example.utilidades.Mensajes;
 import org.example.utilidades.Util;
 
 import java.util.regex.Matcher;
@@ -21,7 +22,7 @@ public class UsuarioValidacion
             throw  new Exception("señor usuario su nombre solo puede tener letras");
         }else if(nombres.length()<10)
         {
-            throw new Exception("señor usuario revise la cantidad de caracteres es muy pequeña");
+            throw new Exception(Mensajes.NOMBRES_MUY_CORTO.getMensajes());
         }else
         {
             return  true;
@@ -32,7 +33,7 @@ public class UsuarioValidacion
         String expresionRegular = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
         if (!util.buscarConcidencia(expresionRegular, correoElectronico))
         {
-            throw new Exception("señor usuario el correo q ha ingresado no es valido :");
+            throw new Exception(Mensajes.CORREO_INVALIDO.getMensajes());
         } else
         {
             return true;

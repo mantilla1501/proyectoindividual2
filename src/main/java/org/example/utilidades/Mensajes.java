@@ -11,7 +11,14 @@ public enum Mensajes {
 
     EL_FORMATO_NO_ES_VALIDO("El formato no es el correcto :"),
 
-    LA_FECHA_DE_INICIO("La fecha final  debe ser mayoy a la de inicio :");
+    LA_FECHA_DE_INICIO("La fecha final  debe ser mayoy a la de inicio :"),
+
+   LA_MEMBRESIA_VALOR("Señor usuario verifique su membresia :"),
+
+    EL_NUMERO_DE_CEDULA_("Señor usuario su numero de cedula solo puede tener numeros :"),
+
+    LA_LONGITUD_("Señor usuario esta exediendo mas de los caracteres permitidos : ");
+
 
     private  String mensajes;
 
