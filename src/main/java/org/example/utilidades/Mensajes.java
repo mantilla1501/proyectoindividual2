@@ -17,7 +17,15 @@ public enum Mensajes {
 
     EL_NUMERO_DE_CEDULA_("Señor usuario su numero de cedula solo puede tener numeros :"),
 
-    LA_LONGITUD_("Señor usuario esta exediendo mas de los caracteres permitidos : ");
+    LA_LONGITUD_("Señor usuario esta exediendo mas de los caracteres permitidos : "),
+
+    EL_NUMERO_DE_PERSONAS("Señor usuario la cantidad de personas es incorrecta : "),
+
+    SEÑOR_USUARIO("Señor usuario verifique su reserva : ");
+
+
+
+
 
 
     private  String mensajes;

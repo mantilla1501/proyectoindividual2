@@ -10,11 +10,7 @@ class UsuarioTest
 {
  private  Usuario usuario;
 
- @BeforeEach
-    public void setUsuario ()
- {
-     this.usuario=new Usuario();
- }
+
 
    @Test
     public  void setUsuarioCorrectoNombres()

@@ -89,4 +89,8 @@ public class Afiliado {
     public void setValidacion(AfiliadoValidacion validacion) {
         this.validacion = validacion;
     }
+
+
+
+
 }

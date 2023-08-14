@@ -14,13 +14,13 @@ public class AfiliadoValidacion {
 
     public Boolean validarMembresia (Integer membresia) throws Exception
     {
-        if (membresia > 20000 || membresia < 150000)
+        if (membresia > 20000 && membresia < 150000)
         {
-            throw new Exception(Mensajes.LA_MEMBRESIA_VALOR.getMensajes());
+            return true;
         }
         else
         {
-            return true;
+            throw new Exception(Mensajes.LA_MEMBRESIA_VALOR.getMensajes());
         }
     }
 
