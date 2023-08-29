@@ -27,7 +27,7 @@ public class NoAfiliadoValidacion {
 
     public Boolean NumeroPersonas (Integer numeropersonas)  throws Exception
     {
-        if (numeropersonas >= 5)
+        if (numeropersonas >= 4)
         {
             throw new Exception(Mensajes.EL_NUMERO_DE_PERSONAS.getMensajes());
         }

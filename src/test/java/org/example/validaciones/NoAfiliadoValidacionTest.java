@@ -40,7 +40,7 @@ class NoAfiliadoValidacionTest {
 
     public void validarPersonaCorrecto()
     {
-        Integer validarPersonaCorrecto= 5;
+        Integer validarPersonaCorrecto= 4;
         Assertions.assertDoesNotThrow(()->noAfiliadoValidacion.NumeroPersonas(validarPersonaCorrecto));
 
     }
